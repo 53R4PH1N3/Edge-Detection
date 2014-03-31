@@ -136,7 +136,7 @@ public class Canny {
             }
         }
 
-		// -- Gaussian smoothing and derivative computations.
+        // -- Gaussian smoothing and derivative computations.
         //    Two cases: mask size <= 16 and > 16.
         if (osize > 16) {
             size = get_gaussian_filter(osize, 0.0, 22000.0, gfilter);
@@ -261,6 +261,7 @@ public class Canny {
     public int[][] conv(int[][] iimage,
             int x_filter[], int x_size, double x_factor,
             int y_filter[], int y_size, double y_factor) {
+        
         int i, j, lines, samples;
         int padded_lines, padded_samples;
         int k, sum, half_x, half_y, oi, oj;
