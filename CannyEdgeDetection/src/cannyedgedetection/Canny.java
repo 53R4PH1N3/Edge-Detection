@@ -8,10 +8,10 @@ public class Canny {
     private int lines   = 512;
     private int samples = 512;
     
-    private int osize = 17;              // -- Gaussian filter width
+    private int osize = 7;              // -- Gaussian filter width
 
     private int threshold_lo = 0;       // -- Edge thresholds low
-    private int threshold_hi = 75;      // -- Edge thresholds high
+    private int threshold_hi = 100;     // -- Edge thresholds high
 
     // -- The image to be processed
     private int[][] inputImage;

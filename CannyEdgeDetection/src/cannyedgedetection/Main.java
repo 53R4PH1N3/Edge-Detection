@@ -7,11 +7,13 @@ import javax.imageio.ImageIO;
 /*------------------------------------------------------------------------------------------------*/
 public class Main {
 
+    private static final String filename = "qrcode.png";
+    
     public static void main(String[] args) {
 
         Canny canny = null;
         try {
-            String s = "src/image/assignment04.png"; // -- read image from project directory
+            String s = "src/image/" + filename; // -- read image from project directory
 
             // -- read input image (1)
             File infile = new File(s);
@@ -52,7 +54,7 @@ public class Main {
                 }
             }
 
-            s = "src/image/canny.png";
+            s = "src/output/" + filename;
             File outputfile = new File(s);
             ImageIO.write(bi, "png", outputfile);
 
